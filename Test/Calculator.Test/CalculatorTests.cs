@@ -8,10 +8,10 @@ namespace Calculator.Test
 {
     public class CalculatorTests
     {
-        Calculator calculator = new Calculator();
         [Fact]
         public void AddTest()
         {
+            Calculator calculator = new Calculator();
 
             var result = calculator.add(2, 3);
 
@@ -21,6 +21,8 @@ namespace Calculator.Test
         [Fact]
         public void Subtract()
         {
+            Calculator calculator = new Calculator();
+
             var result = calculator.Subtract(10, 5);
 
             Assert.Equal(5, result);
@@ -28,6 +30,8 @@ namespace Calculator.Test
         [Fact]
         public void Multiply()
         {
+            Calculator calculator = new Calculator();
+
             var result = calculator.Multiply(2, 3);
 
             Assert.Equal(6, result);
@@ -35,6 +39,8 @@ namespace Calculator.Test
         [Fact] 
         public void Divide()
         {
+            Calculator calculator = new Calculator();
+
             var result = calculator.Divide(10, 5);
 
             Assert.Equal(2,result);
